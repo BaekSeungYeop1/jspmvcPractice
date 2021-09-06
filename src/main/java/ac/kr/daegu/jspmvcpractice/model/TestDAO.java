@@ -1,4 +1,4 @@
-package model;
+package ac.kr.daegu.jspmvcpractice.model;
 
 import java.sql.*;
 

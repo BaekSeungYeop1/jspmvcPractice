@@ -1,6 +1,6 @@
-package controller;
+package ac.kr.daegu.jspmvcpractice.controller;
 
-import model.TestDAO;
+import ac.kr.daegu.jspmvcpractice.model.TestDAO;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
