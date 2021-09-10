@@ -40,6 +40,11 @@ public class BoardFrontController extends HttpServlet {
             viewPage = "view/boardList.jsp";
         }
 
+        // 글 추가하기
+        if(cmdURI.equals("/boardInsert.bbs")){
+            viewPage = "view/boardInsert.jsp";
+        }
+
         RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
         dispatcher.forward(request, response);
 
