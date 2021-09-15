@@ -2,6 +2,7 @@ package ac.kr.daegu.jspmvcpractice.controller;
 
 import ac.kr.daegu.jspmvcpractice.biz.BoardCmd;
 import ac.kr.daegu.jspmvcpractice.biz.BoardListCmd;
+import biz.BoardInsertCmd;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -42,6 +43,10 @@ public class BoardFrontController extends HttpServlet {
 
         // 글 추가하기
         if(cmdURI.equals("/boardInsert.bbs")){
+            // enduser가 작성한 글을 db에 insert 시키는
+            // bizness logic을 작성
+            cmd = new BoardInsertCmd();
+            cmd.execute(request, response);
             viewPage = "boardList.bbs";
         }
 
